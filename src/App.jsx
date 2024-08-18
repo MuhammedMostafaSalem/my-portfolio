@@ -1,7 +1,11 @@
+import Hero from "./sections/hero/Hero"
+
 function App() {
 
   return (
-    <div>hi portfolio</div>
+    <div>
+      <Hero />
+    </div>
   )
 }
 
