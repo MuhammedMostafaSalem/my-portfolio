@@ -7,6 +7,7 @@ export default {
   theme: {
     screens: {
       "sm1-min": { min: "800px" },
+      'sm-min': { min: '576px' },
     },
     extend: {
       colors: {
