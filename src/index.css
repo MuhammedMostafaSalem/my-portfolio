@@ -35,3 +35,23 @@ p {
     font-size: 16px;
     font-weight: 300;
 }
+
+@layer {
+    .gridFilter {
+        @apply flex flex-col items-center gap-[30px]
+    }
+}
+
+
+@media (width >= 576px) {
+    @layer {
+        .gridFilter {
+            @apply flex-row flex-wrap justify-center py-0 px-[30px]
+        }
+    }
+}
+@layer {
+    .btnTab {
+        @apply px-2 py-1 text-[14px]
+    }
+}
