@@ -1,9 +1,18 @@
-export const tabs = [
-    { name: 'All', filter: 'all' },
-    { name: 'Frontend', filter: 'frontend' },
-    { name: 'Backend', filter: 'backend' },
-    { name: 'Fullstack', filter: 'fullstack' },
-]
+import { useTranslation } from "react-i18next";
+
+
+export const useTabs = () => {
+    const { t } = useTranslation();
+
+    const tabs = [
+        { name: t("All"), filter: 'all' },
+        { name: 'Frontend', filter: 'frontend' },
+        { name: 'Backend', filter: 'backend' },
+        { name: 'Fullstack', filter: 'fullstack' },
+    ]
+
+    return tabs;
+}
 
 export const items = [
     { id: 1, category: 'frontend', title: 'React Project' },
