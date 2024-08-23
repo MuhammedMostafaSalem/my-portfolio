@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Tabs from '../../components/Tabs'
-import Title from '../../components/Title';
+import Title from '../../components/utils/Title';
 import ProjectCard from '../../components/ProjectCard'
 import { items, tabs } from '../../data/ProjectsData';
 
@@ -14,7 +14,7 @@ const Projects = () => {
     : items.filter(item => item.category === activeTab)
 
     return (
-        <div id="projects" className='flex flex-col text-center py-[30px] h-[50dvh] min-h-[500px]'>
+        <div id="projects" className='flex flex-col text-center py-[80px]'>
             <Title title="Projects" />
 
             <Tabs tabs={tabs} activeTab={activeTab} onClickTab={onClickTab} />
