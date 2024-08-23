@@ -36,6 +36,26 @@ p {
     font-weight: 300;
 }
 
+/* style scroll-bar */
+@layer {
+    ::-webkit-scrollbar {
+        @apply w-[5px]
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-primary rounded-[5px]
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        @apply cursor-pointer
+    }
+}
+
+/* style cursor */
+@layer {
+    body {
+        @apply cursor-fancy
+    }
+}
+
 @layer {
     .gridFilter {
         @apply flex flex-col items-center gap-[30px]
