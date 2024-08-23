@@ -8,6 +8,7 @@ import Skills from "./sections/skills/Skills"
 import { toggleDarkMode } from "./store/reducer/darkModeReducer"
 import { useTranslation } from "react-i18next"
 import { changeLanguage, setDirection } from "./store/reducer/languageReducer"
+import ScrollToTop from "./components/utils/ScrollToTop"
 
 function App() {
   const dispatch = useDispatch();
@@ -45,6 +46,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
