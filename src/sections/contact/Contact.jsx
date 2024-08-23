@@ -38,7 +38,7 @@ const Contact = () => {
                         py-2
                         px-4
                         rounded-[30px]
-                        cursor-pointer
+                        cursor-point
                         focus:outline-none
                         w-[200px]"
                         type="submit"

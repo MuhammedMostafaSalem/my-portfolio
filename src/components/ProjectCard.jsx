@@ -17,7 +17,7 @@ const ProjectCard = ({filteredItems}) => {
                         <p>Type Project</p>
 
                         <div className='flex justify-center mt-[5px] text-[20px] gap-4 text-textNeutralGray'>
-                            <MdLanguage className='cursor-pointer
+                            <MdLanguage className='cursor-point
                                 transition
                                 ease-in-out
                                 delay-150
@@ -26,7 +26,7 @@ const ProjectCard = ({filteredItems}) => {
                                 hover:text-primary
                                 duration-300'
                             />
-                            <FaGithub className='cursor-pointer
+                            <FaGithub className='cursor-point
                                 transition
                                 ease-in-out
                                 delay-150

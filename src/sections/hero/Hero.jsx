@@ -15,7 +15,7 @@ const Hero = () => {
                     className='w-[250px] h-[250px] sm1-min:w-[350px] sm1-min:h-[350px] rounded-full'
                     alt="Profile picture"
                 />
-                <FaMoon className='text-[20px]' />
+                <FaMoon className='text-[20px] cursor-point' />
             </div>
 
             <div className='flex flex-col gap-[20px]'>
@@ -47,7 +47,7 @@ const Hero = () => {
 
                 <div>
 
-                <button className='shadow-custom text-textNeutralGray border-none rounded-[20px] w-[120px] h-[45px] tetx-[20px]'>Resume</button>
+                <button className='shadow-custom text-textNeutralGray border-none rounded-[20px] w-[120px] h-[45px] tetx-[20px] focus:outline-none cursor-point'>Resume</button>
                 </div>
             </div>
         </div>
