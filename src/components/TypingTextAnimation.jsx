@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
-const TypingTextAnimation = () => {
-    const texts = ["Frontend Developer", "React.js Enthusiast", "UI/UX Designer", "JavaScript Lover", "Web Creator"]; // Ensure this array is always defined
+const TypingTextAnimation = ({t}) => {
+    const texts = [t("Frontend Developer"), t("React.js Enthusiast"), t("UI/UX Developer"), t("JavaScript Lover"), t("Web Creator")]; // Ensure this array is always defined
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
