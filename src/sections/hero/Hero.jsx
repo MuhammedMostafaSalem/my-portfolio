@@ -4,9 +4,10 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaMoon } from "react-icons/fa6";
+import { MdWbSunny } from "react-icons/md";
 import TypingTextAnimation from '../../components/TypingTextAnimation';
 
-const Hero = () => {
+const Hero = ({isDarkMode, handleToggleDarkMode}) => {
     return (
         <div id="hero" className='flex flex-col sm1-min:flex-row-reverse sm1-min:items-center sm1-min:justify-evenly justify-center gap-[20px] text-center h-[100dvh] min-h-[500px]'>
             <div className='flex justify-center'>
@@ -15,10 +16,16 @@ const Hero = () => {
                     className='w-[250px] h-[250px] sm1-min:w-[350px] sm1-min:h-[350px] rounded-full'
                     alt="Profile picture"
                 />
-                <FaMoon className='text-[20px] cursor-point' />
+                <div onClick={handleToggleDarkMode} className={`${isDarkMode ? 'text-textWhaite' : 'text-textBlack'}`}>
+                    {
+                        isDarkMode ?
+                            <MdWbSunny className='text-[20px] cursor-point' />
+                        : <FaMoon className='text-[20px] cursor-point' />
+                    }
+                </div>
             </div>
 
-            <div className='flex flex-col gap-[20px]'>
+            <div className={`flex flex-col gap-[20px] ${isDarkMode ? 'text-textWhaite' : 'text-textBlack'}`}>
                 <h1>
                 Muhammed
                 <br />
@@ -47,7 +54,7 @@ const Hero = () => {
 
                 <div>
 
-                <button className='shadow-custom text-textNeutralGray border-none rounded-[20px] w-[120px] h-[45px] tetx-[20px] focus:outline-none cursor-point'>Resume</button>
+                <button className='shadow-custom text-textWhaite border-none rounded-[20px] w-[120px] h-[45px] tetx-[20px] focus:outline-none cursor-point bg-primary'>Resume</button>
                 </div>
             </div>
         </div>

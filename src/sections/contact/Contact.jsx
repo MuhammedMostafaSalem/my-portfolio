@@ -1,7 +1,10 @@
 import React from 'react'
 import Title from '../../components/utils/Title'
+import { useSelector } from 'react-redux';
 
 const Contact = () => {
+    const { isDarkMode } = useSelector(state => state.darkMode);
+
     return (
         <div id="skills" className='flex flex-col text-center gap-[30px] py-[80px]'>
             <Title title="Contact" />
@@ -13,7 +16,8 @@ const Contact = () => {
                     id="name"
                     placeholder="Name"
                     required
-                    className="border border-textBlack rounded-[30px] px-4 py-2 focus:outline-none"
+                    className={`border rounded-[30px] px-4 py-2 focus:outline-none bg-transparent
+                    ${isDarkMode ? 'border-textWhaite' : 'border-textBlack'}`}
                 />
                 <input
                     type="email"
@@ -21,14 +25,16 @@ const Contact = () => {
                     id="email"
                     placeholder="Email"
                     required
-                    className="border border-textBlack rounded-[30px] px-4 py-2 focus:outline-none"
+                    className={`border rounded-[30px] px-4 py-2 focus:outline-none bg-transparent
+                    ${isDarkMode ? 'border-textWhaite' : 'border-textBlack'}`}
                 />
                 <textarea
                     name="message"
                     id="message"
                     placeholder="Message"
                     required
-                    className="border border-textBlack rounded-[30px] resize-none px-4 py-2 h-32 focus:outline-none"
+                    className={`border rounded-[30px] resize-none px-4 py-2 h-32 focus:outline-none bg-transparent
+                    ${isDarkMode ? 'border-textWhaite' : 'border-textBlack'}`}
                 ></textarea>
                 <div className='flex justify-center'>
                     <input
