@@ -3,7 +3,7 @@ import React from 'react'
 const Tabs = ({tabs, activeTab, onClickTab}) => {
     return (
         <div className="w-full p-4">
-            <div className="flex space-x-4 justify-center mb-6">
+            <div className="flex gap-2 justify-center mb-6">
                 {
                     tabs.map(tab => (
                         <div
@@ -20,21 +20,6 @@ const Tabs = ({tabs, activeTab, onClickTab}) => {
                     ))
                 }
             </div>
-            
-
-            {/* <div className="gridFilter">
-                {
-                    filteredItems.map(item => (
-                        <div
-                            key={item.id}
-                            className="p-4 bg-white shadow rounded hover:shadow-lg transition"
-                        >
-                            <h3 className="text-lg font-semibold">{item.title}</h3>
-                            <p className="text-sm text-gray-500 capitalize">{item.category}</p>
-                        </div>
-                    ))
-                }
-            </div> */}
         </div>
     )
 }
