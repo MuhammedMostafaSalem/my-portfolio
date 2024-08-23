@@ -1,3 +1,4 @@
+import Footer from "./components/utils/Footer"
 import Contact from "./sections/contact/Contact"
 import Hero from "./sections/hero/Hero"
 import Projects from "./sections/projects/Projects"
@@ -11,6 +12,7 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   )
 }
