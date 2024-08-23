@@ -22,6 +22,10 @@ export default {
       },
       boxShadow: {
         'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',
+      },
+      cursor: {
+        'fancy': 'url(./src/assets/images/cursor.png), pointer',
+        'point': 'url(./src/assets/images/point.png), pointer',
       }
     },
   },
