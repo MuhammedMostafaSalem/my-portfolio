@@ -45,7 +45,7 @@ p {
         @apply bg-primary rounded-[5px]
     }
     ::-webkit-scrollbar-thumb:hover {
-        @apply cursor-pointer
+        @apply cursor-point
     }
 }
 
