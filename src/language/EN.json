@@ -16,5 +16,11 @@
     "Email": "Email",
     "Message": "Message",
     "Submit": "Submit",
-    "Developed by Mohammed Mostafa": "Developed by Mohammed Mostafa"
+    "Developed by Mohammed Mostafa": "Developed by Mohammed Mostafa",
+    "Name required": "Name required",
+    "Email required": "Email required",
+    "Invalid email": "Invalid email",
+    "Message required": "Message required",
+    "Message sent successfully": "Message sent successfully",
+    "Failed to send message": "Failed to send message"
 }

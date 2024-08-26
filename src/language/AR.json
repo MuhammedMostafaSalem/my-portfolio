@@ -16,5 +16,11 @@
     "Email": "البريد الاكتروني",
     "Message": "الرسالة",
     "Submit": "ارسال",
-    "Developed by Mohammed Mostafa": "تم التطوير بواسطة محمد مصطفى"
+    "Developed by Mohammed Mostafa": "تم التطوير بواسطة محمد مصطفى",
+    "Name required": "الاسم مطلوب",
+    "Email required": "البريد الإلكتروني مطلوب",
+    "Invalid email": "البريد الإلكتروني غير صحيح",
+    "Message required": "الرسالة مطلوبة",
+    "Message sent successfully": "تم إرسال الرسالة بنجاح",
+    "Failed to send message": "فشل إرسال الرسالة"
 }
