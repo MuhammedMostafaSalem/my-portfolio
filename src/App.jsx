@@ -43,6 +43,7 @@ function App() {
         handleToggleDarkMode={handleToggleDarkMode}
         langs={langs}
         handleChangeLang={handleChangeLang}
+        siteNewTap={siteNewTap}
       />
       <Projects siteNewTap={siteNewTap} />
       <Skills />

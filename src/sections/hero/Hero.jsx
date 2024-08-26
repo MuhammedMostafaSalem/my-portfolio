@@ -9,7 +9,7 @@ import TypingTextAnimation from '../../components/TypingTextAnimation';
 import { useTranslation } from 'react-i18next';
 import CV from '../../assets/file/Mohammed Mostafa CV.pdf';
 
-const Hero = ({isDarkMode, handleToggleDarkMode, langs, handleChangeLang}) => {
+const Hero = ({isDarkMode, handleToggleDarkMode, langs, handleChangeLang, siteNewTap}) => {
     const { t } = useTranslation();
 
     const handleDownloadResume = () => {
@@ -67,15 +67,14 @@ const Hero = ({isDarkMode, handleToggleDarkMode, langs, handleChangeLang}) => {
                 <TypingTextAnimation t={t} />
 
                 <span className='flex justify-center gap-[10px]'>
-                    <a href="https://twitter.com/" target="_blank">
-                        <FaSquareXTwitter className='text-[25px]' />
-                    </a>
-                    <a href="https://github.com/" target="_blank">
-                        <FaGithub className='text-[25px]' />
-                    </a>
-                    <a href="https://linkedin.com/" target="_blank">
-                        <FaLinkedin className='text-[25px]' />
-                    </a>
+                    <FaGithub
+                        className='text-[25px] cursor-point'
+                        onClick={() => siteNewTap("https://github.com/MuhammedMostafaSalem")}
+                    />
+                    <FaLinkedin
+                        className='text-[25px] cursor-point'
+                        onClick={() => siteNewTap("https://www.linkedin.com/in/mohamed-mostafa-aa9184218/")}
+                    />
                 </span>
 
                 <div className='flex justify-center'>
