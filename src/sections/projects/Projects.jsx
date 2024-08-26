@@ -5,7 +5,7 @@ import ProjectCard from '../../components/ProjectCard'
 import { items, useTabs } from '../../data/ProjectsData';
 import { useTranslation } from 'react-i18next';
 
-const Projects = () => {
+const Projects = ({siteNewTap}) => {
     const tabs = useTabs();
     const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState('all');
@@ -14,7 +14,7 @@ const Projects = () => {
 
     const filteredItems = activeTab === 'all' ? 
         items
-    : items.filter(item => item.category === activeTab)
+    : items.filter(item => item.category.includes(activeTab))
 
     return (
         <div id="projects" className='flex flex-col text-center py-[80px]'>
@@ -22,7 +22,7 @@ const Projects = () => {
 
             <Tabs tabs={tabs} activeTab={activeTab} onClickTab={onClickTab} />
 
-            <ProjectCard filteredItems={filteredItems} />
+            <ProjectCard filteredItems={filteredItems} siteNewTap={siteNewTap} />
         </div>
     )
 }
