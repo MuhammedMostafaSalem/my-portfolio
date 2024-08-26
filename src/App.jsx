@@ -34,6 +34,8 @@ function App() {
     dispatch(toggleDarkMode());
   }
 
+  const siteNewTap = url => window.open(url)
+
   return (
     <div className={`${isDarkMode ? "bg-bgblack" : "bg-bgWhaite"}`}>
       <Hero
@@ -42,7 +44,7 @@ function App() {
         langs={langs}
         handleChangeLang={handleChangeLang}
       />
-      <Projects />
+      <Projects siteNewTap={siteNewTap} />
       <Skills />
       <Contact />
       <Footer />
