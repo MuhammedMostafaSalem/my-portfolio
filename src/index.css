@@ -37,21 +37,24 @@ p {
 }
 
 /* style scroll-bar */
-@layer {
-    ::-webkit-scrollbar {
-        @apply w-[5px]
-    }
-    ::-webkit-scrollbar-thumb {
-        @apply bg-primary rounded-[5px]
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        @apply cursor-point
-    }
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #9747FF;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    cursor: url('/src/assets/images/point.png'), auto !important;
 }
 
 /* style cursor */
 body {
     cursor: url('/src/assets/images/cursor.png'), auto !important;
+}
+
+.cursor-point {
+    cursor: url('/src/assets/images/point.png'), auto !important;
 }
 
 @layer {
