@@ -50,10 +50,8 @@ p {
 }
 
 /* style cursor */
-@layer {
-    body {
-        @apply cursor-fancy
-    }
+body {
+    cursor: url('/src/assets/images/cursor.png'), auto !important;
 }
 
 @layer {
