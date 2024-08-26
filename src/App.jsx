@@ -9,6 +9,7 @@ import { toggleDarkMode } from "./store/reducer/darkModeReducer"
 import { useTranslation } from "react-i18next"
 import { changeLanguage, setDirection } from "./store/reducer/languageReducer"
 import ScrollToTop from "./components/utils/ScrollToTop"
+import HeadTitle from "./components/utils/HeadTitle"
 
 function App() {
   const dispatch = useDispatch();
@@ -18,7 +19,7 @@ function App() {
   const [langs, setLangs] = useState(language);
   const [dirs, setDirs] = useState(dir);
 
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const handleChangeLang = (lang) => {
     i18n.changeLanguage(lang)
     dispatch(changeLanguage(lang))
@@ -38,18 +39,20 @@ function App() {
 
   return (
     <div className={`${isDarkMode ? "bg-bgblack" : "bg-bgWhaite"}`}>
-      <Hero
-        isDarkMode={isDarkMode}
-        handleToggleDarkMode={handleToggleDarkMode}
-        langs={langs}
-        handleChangeLang={handleChangeLang}
-        siteNewTap={siteNewTap}
-      />
-      <Projects siteNewTap={siteNewTap} />
-      <Skills />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
+      <HeadTitle title={`${t('fristName')} ` + `${t('lastName')}`}>
+        <Hero
+          isDarkMode={isDarkMode}
+          handleToggleDarkMode={handleToggleDarkMode}
+          langs={langs}
+          handleChangeLang={handleChangeLang}
+          siteNewTap={siteNewTap}
+        />
+        <Projects siteNewTap={siteNewTap} />
+        <Skills />
+        <Contact />
+        <Footer />
+        <ScrollToTop />
+      </HeadTitle>
     </div>
   )
 }
