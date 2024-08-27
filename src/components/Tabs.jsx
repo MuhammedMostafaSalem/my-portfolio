@@ -3,7 +3,7 @@ import React from 'react'
 const Tabs = ({tabs, activeTab, onClickTab}) => {
     return (
         <div className="w-full p-4">
-            <div className="flex gap-2 justify-center mb-6">
+            <div className="flex flex-row flex-wrap justify-center gap-2 mb-6">
                 {
                     tabs.map(tab => (
                         <div
