@@ -50,7 +50,7 @@ function App() {
         <Projects siteNewTap={siteNewTap} />
         <Skills />
         <Contact />
-        <Footer />
+        <Footer siteNewTap={siteNewTap} />
         <ScrollToTop />
       </HeadTitle>
     </div>
