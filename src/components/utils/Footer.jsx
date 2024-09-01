@@ -2,7 +2,7 @@ import React from 'react'
 import whatsApp from '../../assets/images/social.png'
 import { useTranslation } from 'react-i18next';
 
-const Footer = () => {
+const Footer = ({siteNewTap}) => {
     const { t } = useTranslation();
     const year = new Date().getFullYear()
 
@@ -13,9 +13,14 @@ const Footer = () => {
             </p>
 
             <div className='flex gap-3 items-center'>
-                <img src={whatsApp} alt='whatsApp number' />
+                <img
+                    src={whatsApp}
+                    alt='whatsApp number'
+                    className='cursor-point'
+                    onClick={() => siteNewTap('https://wa.me/+201099132966')}
+                />
                 <p className='text-center text-textNeutralGray'>
-                    +201099132966
+                    Talk with me
                 </p>
             </div>
         </div>
