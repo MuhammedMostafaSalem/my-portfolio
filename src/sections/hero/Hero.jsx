@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from '../../assets/images/me.jpeg'
+import avatar from '../../assets/images/me.jpg'
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
