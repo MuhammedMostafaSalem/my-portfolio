@@ -7,7 +7,7 @@ import { FaMoon } from "react-icons/fa6";
 import { MdWbSunny } from "react-icons/md";
 import TypingTextAnimation from '../../components/TypingTextAnimation';
 import { useTranslation } from 'react-i18next';
-import CV from '../../assets/file/Mohammed-Mostafa-Salem-Resume.pdf';
+import CV from '../../assets/file/Mohammed-Mostafa-Salem-Resume-2.pdf';
 
 const Hero = ({isDarkMode, handleToggleDarkMode, langs, handleChangeLang, siteNewTap}) => {
     const { t } = useTranslation();
@@ -16,7 +16,7 @@ const Hero = ({isDarkMode, handleToggleDarkMode, langs, handleChangeLang, siteNe
         const url = CV;
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', 'MoSalem.pdf');
+        link.setAttribute('download', 'MoSalemResume.pdf');
         document.body.appendChild(link);
         link.click();
         link.remove();
