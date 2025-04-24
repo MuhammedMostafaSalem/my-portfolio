@@ -7,7 +7,7 @@ import { FaMoon } from "react-icons/fa6";
 import { MdWbSunny } from "react-icons/md";
 import TypingTextAnimation from '../../components/TypingTextAnimation';
 import { useTranslation } from 'react-i18next';
-import CV from '../../assets/file/Mohammed-Mostafa-Salem-Resume-2.pdf';
+import CV from '../../assets/file/Mohammed-Mostafa-Salem-FlowCV-Resume-20250417.pdf';
 
 const Hero = ({isDarkMode, handleToggleDarkMode, langs, handleChangeLang, siteNewTap}) => {
     const { t } = useTranslation();
