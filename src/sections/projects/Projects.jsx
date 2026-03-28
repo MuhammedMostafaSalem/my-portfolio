@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Tabs from '../../components/Tabs'
 import Title from '../../components/utils/Title';
 import ProjectCard from '../../components/ProjectCard'
@@ -19,6 +19,9 @@ const Projects = ({siteNewTap}) => {
     return (
         <div id="projects" className='flex flex-col text-center py-[80px]'>
             <Title title={t("Projects")} />
+            <p className="text-center max-w-[500px] mx-auto mb-6 text-gray-400">
+                Here are some of the projects I have built using modern web technologies.
+            </p>
 
             <Tabs tabs={tabs} activeTab={activeTab} onClickTab={onClickTab} />
 
