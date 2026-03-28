@@ -19,7 +19,7 @@ const Contact = () => {
 
 
     return (
-        <div id="skills" className='flex flex-col text-center gap-[30px] py-[80px]'>
+        <div id="contact" className='flex flex-col text-center gap-[30px] py-[80px]'>
             <Title title={t("Contact")} />
 
             <form onSubmit={handleSubmit} className="flex justify-center self-center flex-col gap-[30px] w-[250px] sm-min:w-[500px]">
