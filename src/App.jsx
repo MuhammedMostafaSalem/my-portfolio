@@ -10,6 +10,8 @@ import { useTranslation } from "react-i18next"
 import { changeLanguage, setDirection } from "./store/reducer/languageReducer"
 import ScrollToTop from "./components/utils/ScrollToTop"
 import HeadTitle from "./components/utils/HeadTitle"
+import About from "./sections/about/About"
+import Experience from "./sections/experience/Experience"
 
 function App() {
   const dispatch = useDispatch();
@@ -47,7 +49,9 @@ function App() {
           handleChangeLang={handleChangeLang}
           siteNewTap={siteNewTap}
         />
+        <About />
         <Projects siteNewTap={siteNewTap} />
+        <Experience />
         <Skills />
         <Contact />
         <Footer siteNewTap={siteNewTap} />
