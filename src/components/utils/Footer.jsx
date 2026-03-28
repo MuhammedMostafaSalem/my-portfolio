@@ -17,7 +17,7 @@ const Footer = ({siteNewTap}) => {
                     src={whatsApp}
                     alt='whatsApp number'
                     className='cursor-point'
-                    onClick={() => siteNewTap('https://wa.me/+201099132966')}
+                    onClick={() => siteNewTap('https://wa.me/+201557934448')}
                 />
                 <p className='text-center text-textNeutralGray'>
                     Reach out on WhatsApp
