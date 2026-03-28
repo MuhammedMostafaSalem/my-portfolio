@@ -20,7 +20,7 @@ const Footer = ({siteNewTap}) => {
                     onClick={() => siteNewTap('https://wa.me/+201099132966')}
                 />
                 <p className='text-center text-textNeutralGray'>
-                    Talk with me
+                    Reach out on WhatsApp
                 </p>
             </div>
         </div>
