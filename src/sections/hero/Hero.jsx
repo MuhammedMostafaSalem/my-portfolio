@@ -1,10 +1,10 @@
-import avatar from '../../assets/images/me.jpg'
+import avatar from '../../assets/images/myPic.jpeg'
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaMoon } from "react-icons/fa6";
 import { MdWbSunny } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
-import CV from '../../assets/file/Mohammed-Mostafa-Salem-Resume-01.pdf';
+import CV from '../../assets/file/Mohammed Mostafa-MERN-Stack-Developer-Resume.pdf';
 
 const Hero = ({ isDarkMode, handleToggleDarkMode, langs, handleChangeLang, siteNewTap }) => {
     const { t } = useTranslation();
@@ -23,10 +23,10 @@ const Hero = ({ isDarkMode, handleToggleDarkMode, langs, handleChangeLang, siteN
 
     return (
         <div id="hero" className='flex flex-col sm1-min:flex-row-reverse sm1-min:items-center sm1-min:justify-evenly justify-center gap-[20px] text-center h-[100dvh] min-h-[500px]'>
-            <div className='flex justify-center'>
+            <div className='flex justify-center gap-[15px]'>
                 <img
                     src={avatar}
-                    className='w-[250px] h-[250px] sm1-min:w-[350px] sm1-min:h-[350px] rounded-full'
+                    className='w-[250px] h-[250px] sm1-min:w-[350px] sm1-min:h-[350px] rounded-[20px]'
                     alt="Profile picture"
                 />
                 <div>
