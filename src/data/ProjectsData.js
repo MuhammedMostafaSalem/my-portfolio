@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import Quran from '../assets/images/projects/Quran.png';
 import MoviNow from '../assets/images/projects/MoviNow.png';
 import ECOMMERCE from '../assets/images/projects/ECOMMERCE.png';
-import HappyShop from '../assets/images/projects/HappyShop.png';
 import eFurniture from '../assets/images/projects/eFurniture.png';
 import visionThings from '../assets/images/projects/vision-things.png';
 import ADADK from '../assets/images/projects/ADADK.png';
@@ -118,7 +117,7 @@ export const items = [
         type: 'Fullstack',
         img: Chato,
         site: "",
-        github: "https://github.com/MuhammedMostafaSalem/COVID-19.git",
+        github: "https://github.com/MuhammedMostafaSalem/Chato.git",
         description: "Full stack real-time chat application currently in development. The application includes authentication, user profiles, real-time messaging, and project-based chat rooms. Built using the MERN stack and Socket.io.",
         tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "JWT"],
         status: "In Progress"
