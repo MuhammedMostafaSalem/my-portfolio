@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaMoon } from "react-icons/fa6";
 import { MdWbSunny } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
-import CV from '../../assets/file/Mohammed Mostafa-MERN-Stack-Developer-Resume.pdf';
+import CV from '../../assets/file/Mohammed_Mostafa_Salem_CV.pdf';
 
 const Hero = ({ isDarkMode, handleToggleDarkMode, langs, handleChangeLang, siteNewTap }) => {
     const { t } = useTranslation();
